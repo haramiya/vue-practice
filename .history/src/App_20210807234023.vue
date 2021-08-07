@@ -2,8 +2,8 @@
   <div>
     <LikeHeader></LikeHeader>
     <p>{{number}}</p>
-    <LikeNumber :total-number="number" @my-click="number=$event"></LikeNumber>
-    <LikeNumber :total-number="number"></LikeNumber>
+    <LikeNumber :number="total-number" @my-click="number = $event"></LikeNumber>
+    <LikeNumber :number="total-number"></LikeNumber>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>いいね（{{ halfNumber }}）</p>
+    <p>いいね（{{ halfNumber /2 }}）</p>
     <button @click="increment">+1</button>
   </div>
 </template>

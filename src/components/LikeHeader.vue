@@ -1,8 +1,14 @@
 <template>
   <div>
-    <h1>いいね</h1>
+    <h1>トータルのいいね数</h1>
   </div>
 </template>
 
 <script>
 </script>
+
+<style scoped>
+div {
+  border: 1px solid yellow;
+}
+</style>
