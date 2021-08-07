@@ -13,12 +13,10 @@
     </LikeHeader>
     <LikeNumber :total-number="number" @my-click="number=$event"></LikeNumber>
     <LikeNumber :total-number="number"></LikeNumber>
+    <p>{{currentComponent}}</p>
     <button @click="currentComponent = 'Home'">Home</button>
     <button @click="currentComponent = 'About'">About</button>
-    <!-- keep-aliveで動的コンポーネントの中身（テキストボックスなど）をキャッシュする -->
-    <keep-alive>
-      <component :is="currentComponent"></component>
-    </keep-alive>
+    <component :is="'Home'"></component>
   </div>
 </template>
 

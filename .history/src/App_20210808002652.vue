@@ -13,31 +13,20 @@
     </LikeHeader>
     <LikeNumber :total-number="number" @my-click="number=$event"></LikeNumber>
     <LikeNumber :total-number="number"></LikeNumber>
-    <button @click="currentComponent = 'Home'">Home</button>
-    <button @click="currentComponent = 'About'">About</button>
-    <!-- keep-aliveで動的コンポーネントの中身（テキストボックスなど）をキャッシュする -->
-    <keep-alive>
-      <component :is="currentComponent"></component>
-    </keep-alive>
   </div>
 </template>
 
 <script>
 import LikeHeader from "./components/LikeHeader.vue"
-import About from "./components/About.vue"
-import Home from "./components/Home.vue"
 
 export default {
   data() {
     return {
-      number: 14,
-      currentComponent: "Home"
+      number: 14
     };
   },
   components: {
-    LikeHeader,
-    About,
-    Home
+    LikeHeader: LikeHeader
     // keyとvalueが一緒なので、短縮してLikeHeaderだけでも良い
   }
 }

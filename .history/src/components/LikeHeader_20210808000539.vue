@@ -1,9 +1,6 @@
 <template>
   <div>
-    <slot name="title">
-      <h2>デフォルトのタイトル</h2>
-    </slot>
-    <slot name="number"></slot>
+    <slot></slot>
     <p>{{headerText}}</p>
   </div>
 </template>

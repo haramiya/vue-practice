@@ -15,7 +15,6 @@
     <LikeNumber :total-number="number"></LikeNumber>
     <button @click="currentComponent = 'Home'">Home</button>
     <button @click="currentComponent = 'About'">About</button>
-    <!-- keep-aliveで動的コンポーネントの中身（テキストボックスなど）をキャッシュする -->
     <keep-alive>
       <component :is="currentComponent"></component>
     </keep-alive>

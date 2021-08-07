@@ -15,10 +15,8 @@
     <LikeNumber :total-number="number"></LikeNumber>
     <button @click="currentComponent = 'Home'">Home</button>
     <button @click="currentComponent = 'About'">About</button>
-    <!-- keep-aliveで動的コンポーネントの中身（テキストボックスなど）をキャッシュする -->
-    <keep-alive>
-      <component :is="currentComponent"></component>
-    </keep-alive>
+    <About v-if="currentComponent === 'About'"></About>
+    <Home v-if="currentComponent === 'Home'"></Home>
   </div>
 </template>
 
@@ -35,9 +33,9 @@ export default {
     };
   },
   components: {
-    LikeHeader,
-    About,
-    Home
+    LikeHeader: LikeHeader,
+    Home: Home,
+    About: About
     // keyとvalueが一緒なので、短縮してLikeHeaderだけでも良い
   }
 }
