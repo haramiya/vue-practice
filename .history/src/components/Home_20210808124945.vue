@@ -6,7 +6,7 @@
 export default {
     data() {
         return {
-            tmpData: "hello"
+            tempData: "hello"
         }
     },
     directives : {

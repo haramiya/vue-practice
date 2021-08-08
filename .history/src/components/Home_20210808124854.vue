@@ -1,12 +1,12 @@
 <template>
-    <h2 v-border:solid.round.shadow="{width:'5px',color: 'brown', shadow}">Home {{tmpData}}</h2>
+    <h2 v-border:solid.round.shadow="{width:'5px',color: 'brown', shadow}">Home {{tmpDdata}}</h2>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            tmpData: "hello"
+            tempData: "hello"
         }
     },
     directives : {
