@@ -15,7 +15,6 @@ Vue.component('LikeNumber', LikeNumber);
 //     }
 // }
 // });
-
 // Vue.directive('border', {
 //   bind()
 //   {
